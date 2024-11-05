@@ -11,19 +11,15 @@ public class SillyMethodsTest {
         Assertions.assertTrue(result);
     }
 
-    @Test
-    public void testDidGuess42Incorrectly(){
-        SillyMethods sillyMethods = new SillyMethods();
-        boolean result = sillyMethods.didGuess42(17);
-        Assertions.assertTrue(result);
-    }
 
     @Test
     public void testCountTo10(){
         SillyMethods sillyMethods = new SillyMethods();
-        String result = sillyMethods.countTo10(10);
+        String result = sillyMethods.countTo(10);
         Assertions.assertEquals("0 1 2 3 4 5 6 7 8 9 10", result);
     }
+
+
 
     @Test
     public void testCountTo15(){
